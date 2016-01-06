@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/common'], function(exports_1) {
+System.register(['angular2/core', 'angular2/common', './hero-form.component'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,7 +8,7 @@ System.register(['angular2/core', 'angular2/common'], function(exports_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, common_1;
+    var core_1, common_1, hero_form_component_1;
     var TodoItem, AppComponent2;
     return {
         setters:[
@@ -17,6 +17,9 @@ System.register(['angular2/core', 'angular2/common'], function(exports_1) {
             },
             function (common_1_1) {
                 common_1 = common_1_1;
+            },
+            function (hero_form_component_1_1) {
+                hero_form_component_1 = hero_form_component_1_1;
             }],
         execute: function() {
             TodoItem = (function () {
@@ -60,7 +63,7 @@ System.register(['angular2/core', 'angular2/common'], function(exports_1) {
                 AppComponent2 = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        templateUrl: 'app.html', directives: [common_1.NgFor, common_1.NgIf]
+                        templateUrl: 'app/app.html', directives: [common_1.NgFor, common_1.NgIf, hero_form_component_1.HeroFormComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent2);

@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
 import {NgFor, NgIf} from 'angular2/common';
+import {HeroFormComponent} from './hero-form.component'
 
 export class TodoItem {
     constructor(public text: string, public completed: boolean) {
@@ -9,7 +10,7 @@ export class TodoItem {
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app.html', directives: [NgFor, NgIf]
+    templateUrl: 'app/app.html', directives: [NgFor, NgIf, HeroFormComponent]
 })
 
 export class AppComponent2 { 
